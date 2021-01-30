@@ -5,3 +5,8 @@ span.logo-text {
 span.logo-text > img {
   height: 60px;
 }
+
+span.navbar-logo > img {
+  height: 100px;
+  margin-top: -12px;
+}

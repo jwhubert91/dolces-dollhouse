@@ -6,24 +6,19 @@ div.chat-buttons-overlay-container {
   padding: 0;
 }
 
-a.whatsapp-order-button {
-  font-size: 30px;
+a.order-button-cta {
+  font-size: 25px;
   font-family: Helvetica, sans-serif;
   color: black;
-  background-color: #65cd65;
+  background-color: #E9499A;
   padding: 10px;
   border-radius: 40px;
   text-decoration: none;
   box-shadow: 2px 5px 16px 0px #244b24, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
-a.whatsapp-order-button:hover,
-a.whatsapp-order-button:focus {
-  box-shadow: inset -1px 3px 8px 5px #70f770, 2px 5px 16px 0px #244b24,
-    5px 5px 15px 5px rgba(0, 0, 0, 0);
-}
-
-a.whatsapp-order-button > i {
-  font-size: 38px;
-  color: white;
+span > a.order-button-cta > i {
+  font-size: 50px;
+  color: black;
+  font-weight: bold;
 }

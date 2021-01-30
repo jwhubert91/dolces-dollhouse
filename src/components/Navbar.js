@@ -5,7 +5,7 @@ import Logo from './Logo';
 function Navbar() {
   return (
     <nav className='navbar'>
-      <Logo />
+      <Logo isNavbarLogo={true} />
     </nav>
   );
 }

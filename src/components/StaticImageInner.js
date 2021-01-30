@@ -1,16 +1,30 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './StaticImageInner.css';
 
 function StaticImageInner(props) {
-  const innerImageStyle = {
-    background: `url(${props.imageUrl})`,
-  };
+  const [windowWidth,setWindowWidth] = useState(0);
+
+  window.onresize = () => {
+    setWindowWidth(window.innerWidth);
+  }
+
+  const innerImageStyle = windowWidth < 570 ?
+   ({
+    width: '100%',
+    height: '80vh',
+    backgroundImage: `url(${props.imageUrl})`,
+    backgroundSize: 'cover',
+  }) : 
+   ({
+    width: '100%',
+    height: '500px',
+    backgroundImage: `url(${props.imageUrl})`,
+    backgroundSize: 'contain',
+  });
   return (
-    <div className='image-grid-container'>
       <div className='home-image-container' style={innerImageStyle}>
         <span className='image-header-text'>{props.imageHeaderText}</span>
       </div>
-    </div>
   );
 }
 
